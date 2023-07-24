@@ -95,7 +95,7 @@ def compare(user_score, computer_score):
         return "You went over. You lose."
     elif computer_score > 21:
         return "Opponent went over. You win!"
-    elif user_cards > computer_score:
+    elif user_score > computer_score:
         return "You win!"
     else:
         return "You lose."
@@ -135,5 +135,3 @@ def play_game():
 while input("Do you want to play a game of Blackjack? Type 'y' or 'n': ").lower() == "y":
     os.system('clear')
     play_game() 
-
-cards = [11,2,3,4,5,6,7,8,9,10,10,10,10]
